@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property="og:image" content='https://cdn2.suno.ai/image_large_e1ac752b-8832-44cd-8122-ab46180aa9e9.jpeg'>
+        <meta property="og:image" content='https://cdn2.suno.ai/image_e1ac752b-8832-44cd-8122-ab46180aa9e9.jpeg'>
         <meta property="og:title" content='Green Horizons'>
         <meta property="og:audio" content='https://cdn1.suno.ai/e1ac752b-8832-44cd-8122-ab46180aa9e9.mp3'>
     </head>
     <body>
         <script>
-            const fullPath = window.location.pathname;
-            const pathSegments = fullPath.split('/');
-            const filteredSegments = pathSegments.filter(segment => segment !== '');
-            const endpoint = filteredSegments[filteredSegments.length - 1];
-            window.location.href = `https://_song.886996007.xyz?id=${endpoint}`;
+            const segs = window.location.pathname.split('/').filter(segment => segment !== '');
+            window.location.href = `https://song.886996007.xyz?debug=1&id=${segs[segs.length - 1].split('.')[0]}`;
         </script>
     </body>
 </html>

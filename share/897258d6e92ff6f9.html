@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property="og:image" content='https://cdn2.suno.ai/image_large_8952d37a-caf6-4334-a551-f602c5db0eba.jpeg'>
+        <meta property="og:image" content='https://cdn2.suno.ai/image_8952d37a-caf6-4334-a551-f602c5db0eba.jpeg'>
         <meta property="og:title" content='Purr and Swipe'>
         <meta property="og:audio" content='https://cdn1.suno.ai/8952d37a-caf6-4334-a551-f602c5db0eba.mp3'>
     </head>
     <body>
         <script>
-            const fullPath = window.location.pathname;
-            const pathSegments = fullPath.split('/');
-            const filteredSegments = pathSegments.filter(segment => segment !== '');
-            const endpoint = filteredSegments[filteredSegments.length - 1];
-            window.location.href = `https://_song.886996007.xyz?id=${endpoint}`;
+            const segs = window.location.pathname.split('/').filter(segment => segment !== '');
+            window.location.href = `https://song.886996007.xyz?debug=1&id=${segs[segs.length - 1].split('.')[0]}`;
         </script>
     </body>
 </html>

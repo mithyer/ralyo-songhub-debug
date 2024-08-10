@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta property="og:image" content='https://cdn1.suno.ai/image_large_bb9ae06a-44cd-4a47-bd62-8041333f1893.png'>
+        <meta property="og:image" content='https://cdn1.suno.ai/image_bb9ae06a-44cd-4a47-bd62-8041333f1893.png'>
         <meta property="og:title" content='Purr-fect 9'>
         <meta property="og:audio" content='https://cdn1.suno.ai/bb9ae06a-44cd-4a47-bd62-8041333f1893.mp3'>
     </head>
     <body>
         <script>
-            const fullPath = window.location.pathname;
-            const pathSegments = fullPath.split('/');
-            const filteredSegments = pathSegments.filter(segment => segment !== '');
-            const endpoint = filteredSegments[filteredSegments.length - 1];
-            window.location.href = `https://_song.886996007.xyz?id=${endpoint}`;
+            const segs = window.location.pathname.split('/').filter(segment => segment !== '');
+            window.location.href = `https://song.886996007.xyz?debug=1&id=${segs[segs.length - 1].split('.')[0]}`;
         </script>
     </body>
 </html>
